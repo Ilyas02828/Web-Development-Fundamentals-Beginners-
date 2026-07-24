@@ -19,7 +19,7 @@ Task: Take Day 3's pricing cards and Day 4's dashboard and make them fully respo
 Task#4: Learn Bootstrap grid system & components
 Bootstrap container/row/col system, breakpoints (col-sm, col-md, col-lg) Components: navbar, buttons, cards, forms, alerts
 Task: Rebuild the profile page from Day 1-2 entirely using Bootstrap 5 (CDN) — responsive navbar, card-based skills section, Bootstrap form with validation classes.
-<img width="1441" height="462" alt="Screenshot 2026-07-24 124318" src="https://github.com/user-attachments/assets/d0111294-ec01-4193-b39b-eb86f66b4e43" />
+<img width="1887" height="840" alt="Screenshot 2026-07-24 124318" src="https://github.com/user-attachments/assets/128a345c-29ef-4c75-8194-86db0b0cfec7" />
 
 ## Task# 5, Task#6 and Task# 7
 
@@ -34,12 +34,15 @@ Task: Add smooth hover animations, a CSS-only loading spinner, and a fade-in scr
 Task #7: Core JS + interactivity
 Variables (let/const), functions, arrow functions, array/object methods (map, filter, forEach) DOM selection (querySelector), event listeners, classList manipulation
 Task: Make the landing page interactive — a working mobile nav toggle (vanilla JS, no Bootstrap JS), a dark/light mode switcher, and a simple form validator with error messages hown/hidden via DOM manipulation.
-<img width="1441" height="462" alt="Screenshot 2026-07-24 124453" src="https://github.com/user-attachments/assets/491aa223-9018-4f81-81c1-c849ae3209e0" />
-<img width="830" height="1012" alt="Screenshot 2026-07-24 124700" src="https://github.com/user-attachments/assets/c20da381-ad02-4a4a-a638-eceb5e259977" />
+<img width="1867" height="727" alt="Screenshot 2026-07-24 124453" src="https://github.com/user-attachments/assets/302a5dfd-63a0-4133-b77f-ac0e0f18d317" />
+
+<img width="895" height="493" alt="Screenshot 2026-07-24 124700" src="https://github.com/user-attachments/assets/418d7b0b-0c8e-436c-a395-79a670963d32" />
 
 Task#8: JavaScript — Async, Fetch & JSON
 Goal: Prepare for API-driven apps. fetch(), Promises, async/await, error handling with try/catch Working with JSON responses
 Task: Build a small "Weather/Quote/Joke card" app that fetches data from a free public API (e.g. api.quotable.io or openweathermap) and renders it dynamically into the DOM, with a loading state and error handling.
-<img width="830" height="1012" alt="Screenshot 2026-07-24 123913" src="https://github.com/user-attachments/assets/27836693-36c7-422b-92c2-5073640e6aa0" />
-<img width="1441" height="462" alt="Screenshot 2026-07-24 121654" src="https://github.com/user-attachments/assets/8302c28b-cdd0-47be-918b-b24e3d8761b8" />
+<img width="635" height="261" alt="Screenshot 2026-07-24 123913" src="https://github.com/user-attachments/assets/d649858d-cd40-43d7-a5e3-1c5c9067e2cb" />
+
+<img width="526" height="436" alt="Screenshot 2026-07-24 121654" src="https://github.com/user-attachments/assets/b9720f31-8e4c-4722-910c-3db29e211962" />
+
 <img width="1441" height="462" alt="Screenshot 2026-07-24 154332" src="https://github.com/user-attachments/assets/3057f43e-cf9a-4766-8e89-aaf9e858aee9" />
