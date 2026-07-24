@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(80vh - 80px);
+}
+.hero button {
+  background: #1e1eca;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.hero button:hover {
+  transform: translateY(-3px);
+  background: rgb(7, 33, 91);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAAS Landing Page</title>
+
+    <link rel="stylesheet" href="../bootstrap-css/bootstrap.min.css">
+
+    <style>
+        :root {
+            --background-color: black;
+            --text-color: white;
+            --button-background-color: rgb(30, 30, 221);
+            --hover-color: rgb(35, 35, 109);
+            --border-radius: 12px;
+        }
+
+        .link-color {
+            color: var(--text-color);
+        }
+
+        .button {
+            background: var(--background-color);
+            color: var(--text-color);
+            border-radius: var(--border-radius);
+        }
+
+        .button:hover {
+            background: var(--hover-color);
+            color: var(--text-color);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">SaaS Product</a>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link link-color" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link link-color" href="#features">Features</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link link-color" href="#pricing">Pricing</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link link-color" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="row align-items-center mt-3 mb-3">
+                <div class="col-lg-6">
+                    <h1>Build Better Software Faster</h1>
+                    <p>Modern SaaS solution for developers and startups.</p>
+
+                    <a class="button btn btn-lg" href="#">Get Started</a>
+                </div>
+                <div class="col-lg-6 text-center mt-3">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=700"
+                        class="img-fluid rounded" alt="Hero Section Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4" id="features">
+        <div class="container">
+            <h2 class="text-center mb-3">Features</h2>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h3>Fast</h3>
+                            <p>Lightning fast performance with cloud hosting.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h3>Secure</h3>
+                            <p>Enterprise-grade security for your business.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h3>Easy to Use</h3>
+                            <p>Clean dashboard with intuitive design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="bg-light py-3">
+        <div class="container">
+            <h2 class="text-center mb-3"> Pricing </h2>
+
+            <div class="row justify-content-center g-4">
+                <div class="col-md-4">
+                    <div class="card text-center shadow">
+                        <div class="card-body">
+                            <h3>Starter</h3>
+                            <p>$5 / Per Month</p>
+                            <button class="button btn"> Choose Plan </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center shadow">
+                        <div class="card-body">
+                            <h3>Pro</h3>
+                            <p>$15 / Per Month</p>
+                            <button class="button btn"> Choose Plan </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <h4>Follow Us</h4>
+            <a href="#" class="text-white">YouTube</a>
+            <a href="#" class="text-white">Instagram</a>
+            <a href="#" class="text-white">LinkedIn</a>
+            <a href="#" class="text-white">Twitter</a>
+            <a href="#" class="text-white">Facebook</a>
+            <p class="mt-3"> © 2026 SAAS Landing Page. All Rights Reserved. </p>
+        </div>
+    </footer>
+
+    <script src="../bootstrap-js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

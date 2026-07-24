@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umar Farooq Portfolio with Bootstrap</title>
+
+    <link href="../bootstrap-css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: sans-serif, Arial;
+        }
+
+        .nav-link:hover {
+            color: #0dd7f2;
+        }
+
+        .profile-image {
+            max-width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold" href="#"> Umar Farooq Portfolio </a>
+
+            <div class="navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Me</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <section class="row align-items-center g-5 mb-5">
+            <div class="col-lg-8">
+                <h2 class="mb-3">About Me</h2>
+                <p class="text-justify">
+                    My name is Umar Farooq. I am pursuing a Bachelor's degree in Software Engineering. I have a strong
+                    interest in web development and have been learning the MERN stack, including React.js, Node.js,
+                    Express.js, and MongoDB. I enjoy solving programming problems and building real-world projects that
+                    improve my practical skills. Recently, I have been focusing on creating MERN-stack applications and
+                    expanding my knowledge of software design and architecture. My goal is to become a skilled software
+                    engineer and continue learning modern technologies.
+                </p>
+            </div>
+
+            <div class="col-lg-4 text-center">
+                <img src="../Task-1/Umar-Farooq-Linkedin-Profile-Photo-No-Background.png"
+                    class="profile-image rounded border border-dark border-3">
+                <h5 class="mt-3 fw-bold"> Umar Farooq </h5>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="mb-4"> Web Development Skills </h2>
+
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body">
+                            <h4 class="card-title"> Frontend </h4>
+                            <ol>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>ReactJS</li>
+                                <li>Bootstrap</li>
+                                <li>TailwindCSS</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Backend</h4>
+                            <ol>
+                                <li>NodeJS</li>
+                                <li>ExpressJS</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Databases</h4>
+                            <ol>
+                                <li>MySQL</li>
+                                <li>MongoDB</li>
+                                <li>PostgreSQL</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Other Tools</h4>
+                            <ol>
+                                <li>Git</li>
+                                <li>GitHub</li>
+                                <li>Postman</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Programming Languages</h4>
+                            <ol>
+                                <li>Java</li>
+                                <li>C++</li>
+                                <li>Python</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="mb-4"> Contact Me </h2>
+            <form action="https://formsubmit.co/umarfarooq21441@gmail.com" method="POST">
+                <div class="mb-3">
+                    <input type="email" name="email" class="form-control" placeholder="Enter Your Email" required>
+                </div>
+
+                <div class="mb-3">
+                    <input type="number" name="phone" class="form-control" placeholder="Enter Your Phone Number"
+                        required>
+                </div>
+
+                <div class="mb-3">
+                    <textarea name="message" class="form-control" rows="5" placeholder="Enter Your Message"
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-dark"> Send Message </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <h4 class="mb-4 fw-bold">Footer Section</h4>
+        <p>Address: New Gulberg Town, Gulberg #2, Peshawar</p>
+        <p>Contact: +92 336 1004894</p>
+        <p>Email: umartheafridi@gmail.com</p>
+        <p>&copy; Company. All Rights Reserved. </p>
+    </footer>
+
+    <script src="../bootstrap-js//bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

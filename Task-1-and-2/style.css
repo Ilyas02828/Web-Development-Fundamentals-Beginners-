@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  color: black;
+  line-height: 1.6;
+}
+
+.header {
+  background: black;
+  color: white;
+  padding: 20px 50px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 28px;
+}
+
+.navbar {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #0dd7f2;
+}
+
+.main {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.about-text {
+  flex: 2;
+  text-align: justify;
+}
+
+.profile {
+  flex: 1;
+  text-align: center;
+}
+
+.profile img {
+  width: 240px;
+  border-radius: 20%;
+  border: 4px solid black;
+}
+
+.profile figcaption {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.skills-section {
+  margin-bottom: 60px;
+}
+
+.skills-section h3 {
+  margin-bottom: 20px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.skill-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px black;
+}
+
+.skill-box h4 {
+  margin-bottom: 10px;
+}
+
+.skill-box ol {
+  padding-left: 20px;
+}
+
+.contact-section {
+  margin-bottom: 60px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 1px solid black;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form button {
+  background: black;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #3a3939;
+}
+
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.footer p {
+  margin: 10px 0;
+}

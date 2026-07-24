@@ -1,0 +1,37 @@
+@import "variables";
+@import "mixins";
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background:$secondary;
+    color:$white;
+    text-align:center;
+    padding:10px;
+}
+
+.hero{
+    @include center;
+
+    flex-direction:column;
+    height:calc(80vh - 80px);
+
+    button{
+        background:$primary;
+        color:$white;
+
+        padding:15px 30px;
+        border:none;
+
+        border-radius:$radius;
+        transition:$transition;
+
+        &:hover{
+            transform:translateY(-3px);
+            background:rgb(7, 33, 91);
+        }
+    }
+}
