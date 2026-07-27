@@ -63,3 +63,68 @@ function removeItem(index) {
   saveCart();
   renderCart();
 }
+
+const products = [
+  {
+    name: "Wireless Headphones",
+    price: 120,
+    imageNumber: "1",
+  },
+  {
+    name: "Smart Watch",
+    price: 220,
+    imageNumber: "2",
+  },
+  {
+    name: "Gaming Mouse",
+    price: 60,
+    imageNumber: "3",
+  },
+  {
+    name: "Color Printer",
+    price: 250,
+    imageNumber: "4",
+  },
+  {
+    name: "AC/DC Fan",
+    price: 70,
+    imageNumber: "5",
+  },
+  {
+    name: "Scanner",
+    price: 40,
+    imageNumber: "6",
+  },
+  {
+    name: "Core i5 HP Laptop",
+    price: 400,
+    imageNumber: "7",
+  },
+  {
+    name: "Wireless Keyboard",
+    price: 20,
+    imageNumber: "8",
+  },
+];
+
+function displayProducts() {
+  const productsContanier = document.getElementById("products-container");
+
+  products.forEach((product) => {
+    productsContanier.innerHTML += `
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+            <img src="https://picsum.photos/300?${product.imageNumber}" class="card-img-top">
+            <div class="card-body">
+                <h5>${product.name}</h5>
+                <p>$${product.image}</p>
+
+                <button class="btn btn-outline-primary add-cart"> Add to Cart </button>
+            </div>
+        </div>
+      </div>
+    `;
+  });
+}
+
+displayProducts();
