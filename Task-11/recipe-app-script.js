@@ -12,20 +12,27 @@ searchInput.addEventListener("keydown", (event) => {
 async function getRecipes() {
   const recipeName = searchInput.value;
 
-  const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${recipeName}`;
-  const response = await fetch(url);
+  if (recipeName) {
+    const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${recipeName}`;
+    const response = await fetch(url);
 
-  const data = await response.json();
-  displayRecipes(data.meals);
+    const data = await response.json();
+    displayRecipes(data.meals);
 
-  searchInput.value = "";
+    searchInput.value = "";
+  } else {
+    recipeContainer.innerHTML =
+      "<h4 class='text-center text-danger'>Please enter an item name</h4>";
+    return;
+  }
 }
 
 function displayRecipes(recipes) {
   recipeContainer.innerHTML = "";
 
   if (!recipes) {
-    recipeContainer.innerHTML = "<h3 class='text-center'>No recipe found</h3>";
+    recipeContainer.innerHTML =
+      "<h4 class='text-center text-danger'>No recipe found</h4>";
     return;
   }
 

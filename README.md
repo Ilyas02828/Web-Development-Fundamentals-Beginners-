@@ -63,7 +63,7 @@ Task: Turn the shop page into a working cart: add/remove items updates a state o
 
 <img width="1245" height="837" alt="Screenshot 2026-07-27 122952" src="https://github.com/user-attachments/assets/8f0a731b-adb1-4257-a87c-17d7543ca06a" />
 
-##Task # 11
+## Task # 11
 
 #Task # 11: Goal: Integrate everything from both weeks
 Combine HTML/CSS/Bootstrap/JS/API/localStorage into one cohesive project
