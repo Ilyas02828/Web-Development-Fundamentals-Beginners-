@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Application</title>
+
+    <link rel="stylesheet" href="../bootstrap-css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="./index.html">Todo List App </a>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="header-link nav-link fw-bold text-white" href="./index.html">Todo List App</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="header-link nav-link fw-bold text-white" href="./recipe-finder.html">Recipe App</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="header-link nav-link fw-bold text-white" href="./about-me.html">About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="card shadow p-4 mb-4">
+            <h2 class="text-center mb-4">Todo Manager</h2>
+
+            <div class="row g-3 align-items-center my-2">
+                <div class="col-md-5">
+                    <input type="text" placeholder="Enter todo name" class="form-control js-name-input">
+                </div>
+
+                <div class="col-md-4">
+                    <input type="date" class="form-control js-due-date-input">
+                </div>
+
+                <div class="col-md-3 d-grid">
+                    <button class="btn btn-primary js-todo-add-button" id="js-todo-add-button"> Add Task </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow p-4">
+            <h3 class="mb-4">Your Tasks</h3>
+            <div class="js-todo-list"> </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <h4 class="mb-4 fw-bold">Footer Section</h4>
+        <p>Address: Peshawar Khyber Pakhtunkwa Pakistan</p>
+        <p>Contact: +92 123 4567890</p>
+        <p>Email: emial@gmail.com</p>
+        <p>&copy; Company. All Rights Reserved. </p>
+    </footer>
+
+    <script src="../bootstrap-js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

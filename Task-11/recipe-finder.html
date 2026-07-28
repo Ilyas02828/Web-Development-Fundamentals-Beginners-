@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+
+    <link rel="stylesheet" href="../bootstrap-css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="./recipe-finder.html">Recipe Finder App </a>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="header-link nav-link fw-bold text-white" href="./index.html">Todo List App</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="header-link nav-link fw-bold text-white" href="./recipe-finder.html">Recipe App</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="header-link nav-link fw-bold text-white" href="./about-me.html">About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Recipe Finder</h2>
+        <div class="input-group mb-4 container">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search recipe...">
+            <button class="btn btn-primary" id="searchBtn"> Search </button>
+        </div>
+
+        <div class="row" id="recipeContainer"></div>
+    </div>
+
+    <script src="../bootstrap-js/bootstrap.bundle.min.js"></script>
+    <script src="./recipe-app-script.js"></script>
+</body>
+
+</html>
