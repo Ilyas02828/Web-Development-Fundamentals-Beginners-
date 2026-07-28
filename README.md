@@ -64,3 +64,17 @@ Task: Turn the shop page into a working cart: add/remove items updates a state o
 <img width="1245" height="837" alt="Screenshot 2026-07-27 122952" src="https://github.com/user-attachments/assets/8f0a731b-adb1-4257-a87c-17d7543ca06a" />
 
 ##Task # 11
+
+#Task # 11: Goal: Integrate everything from both weeks
+Combine HTML/CSS/Bootstrap/JS/API/localStorage into one cohesive project
+Task: Build a 3-4 page mini project (e.g., a "Task Manager" or "Recipe Finder" app):
+
+Landing/home page
+A page that fetches and displays data from an API
+CRUD-like interactions using localStorage (add/edit/delete items)
+Fully responsive, using Bootstrap + custom CSS
+Clean Git history with a proper README
+
+<img width="1658" height="841" alt="Screenshot 2026-07-28 130750" src="https://github.com/user-attachments/assets/34def147-4f99-4426-b58d-19967efad587" />
+
+<img width="1242" height="837" alt="Screenshot 2026-07-28 131153" src="https://github.com/user-attachments/assets/0e11d36a-8dcb-48f2-8ac9-13259bffc00d" />
