@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif, Arial, Helvetica;
+}
+
+header,
+.header-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  background: black;
+  color: white;
+  padding: 20px 50px;
+}
+
+.header-left {
+  padding: 7px 8px;
+  gap: 30px;
+}
+
+.logo {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+#menu-btn {
+  display: none;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-bar a:hover {
+  color: #0dd7f2;
+  transition: 0.3s;
+}
+
+button {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 9px 11px;
+  border: none;
+  border-radius: 16px;
+
+  background-color: rgb(43, 42, 42);
+  color: white;
+
+  cursor: pointer;
+}
+
+body.theme-btn {
+  color: black;
+  background-color: white;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.dark {
+  background: #222;
+  color: white;
+}
+
+.dark header,
+.dark .header-left {
+  background: rgb(159, 158, 158);
+  color: black;
+}
+
+.dark header .logo,
+.dark .nav-bar .a {
+  color: white;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+}
+
+.card {
+  width: 320px;
+  max-width: 500px;
+
+  margin-top: 40px;
+  border: 1px solid black;
+  padding: 20px 10px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 auto;
+
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.card h3 {
+  font-size: 19px;
+}
+
+.dark .card {
+  background: #333;
+  color: white;
+  border-color: white;
+}
+
+.contact {
+  margin: 50px auto;
+  width: 450px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.contact input {
+  padding: 10px;
+}
+
+.contact form button {
+  max-width: 100px;
+}
+
+.error {
+  color: red;
+  display: none;
+}
+
+.error.show {
+  display: block;
+}
+
+@media (max-width: 815px) {
+  #menu-btn {
+    display: flex;
+  }
+
+  .nav-bar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-bar.active {
+    display: flex;
+  }
+}

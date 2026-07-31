@@ -122,3 +122,8 @@ my-react-app
 └── index.html
 
 <img width="840" height="722" alt="Screenshot 2026-07-30 121651" src="https://github.com/user-attachments/assets/5103079b-1ede-4e0f-9843-b59865b2eff4" />
+
+## Task # 3: State & Events — useState
+Goal: Interactivity the React way useState, controlled components, event handlers in JSX (onClick, onChange)
+Conditional rendering (&&, ternary)
+Task: Convert the Day 9 dark/light toggle and mobile nav into React state. Build a controlled form (name/email/message) with real-time validation messages driven by state, not DOM manipulation.
