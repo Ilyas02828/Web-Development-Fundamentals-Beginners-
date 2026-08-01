@@ -1,0 +1,23 @@
+:root {
+  --background-color: black;
+  --text-color: white;
+  --button-background-color: rgb(30, 30, 221);
+  --hover-color: rgb(35, 35, 109);
+  --border-radius: 12px;
+}
+
+.link-color {
+  color: var(--text-color);
+}
+
+.button {
+  background: var(--background-color);
+  color: var(--text-color);
+  border-radius: var(--border-radius);
+}
+
+.button:hover {
+  background: var(--hover-color);
+  color: var(--text-color);
+  transition: 0.3s;
+}
