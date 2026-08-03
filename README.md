@@ -127,3 +127,7 @@ my-react-app
 Goal: Interactivity the React way useState, controlled components, event handlers in JSX (onClick, onChange)
 Conditional rendering (&&, ternary)
 Task: Convert the Day 9 dark/light toggle and mobile nav into React state. Build a controlled form (name/email/message) with real-time validation messages driven by state, not DOM manipulation.
+
+## Task # 14: useEffect & Data Fetching in React
+Goal: Side effects and lifecycle useEffect, dependency arrays, cleanup functions Fetching API data inside a component, loading/error states
+Task: Rebuild the Day 10 API card app in React — fetch quotes/weather on mount, show a loading spinner while fetching, handle errors gracefully, and add a "New Quote" button that re-fetches.
