@@ -107,8 +107,9 @@ You'll see something like: VITE v8.x.x ready in 400ms. Local: http://localhost:5
 Open: http://localhost:5173
 
 Project structure: After creating the project, you'll see something like:
+
+```
 my-react-app
-│
 ├── node_modules/
 ├── public/
 ├── src/
@@ -116,10 +117,10 @@ my-react-app
 │   ├── App.jsx
 │   ├── main.jsx
 │   └── index.css
-│
 ├── package.json
 ├── vite.config.js
 └── index.html
+```
 
 <img width="840" height="722" alt="Screenshot 2026-07-30 121651" src="https://github.com/user-attachments/assets/5103079b-1ede-4e0f-9843-b59865b2eff4" />
 
@@ -131,3 +132,10 @@ Task: Convert the Day 9 dark/light toggle and mobile nav into React state. Build
 ## Task # 14: useEffect & Data Fetching in React
 Goal: Side effects and lifecycle useEffect, dependency arrays, cleanup functions Fetching API data inside a component, loading/error states
 Task: Rebuild the Day 10 API card app in React — fetch quotes/weather on mount, show a loading spinner while fetching, handle errors gracefully, and add a "New Quote" button that re-fetches.
+
+## NodeJS 
+## Task # 15: Node.js Fundamentals & NPM
+Goal: Understand the runtime outside the browser. Node.js basics: modules (require/module.exports and ES modules), npm init, installing packages Built-in modules: fs, path, http Environment variables with dotenv
+Task: Build a simple CLI tool with Node (no Express) that reads a JSON file of "tasks," lets you add/list/delete tasks via command-line arguments, and writes back to the file using fs.
+
+<img width="578" height="767" alt="Screenshot 2026-08-04 120136" src="https://github.com/user-attachments/assets/243aa142-da50-499e-b775-8f9f9bbbe53a" />

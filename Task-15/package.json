@@ -1,0 +1,19 @@
+{
+  "name": "cli-add-task-tool",
+  "version": "1.0.0",
+  "description": "A CLI based tool to add tasks using NodeJS",
+  "keywords": [
+    "Adding tool",
+    "CLI adding tool",
+    "CLI NodeJS addingtool"
+  ],
+  "license": "ISC",
+  "author": "Umar Farooq",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  }
+}
