@@ -1,0 +1,41 @@
+@import url(.././index.css);
+
+.doctor_panel_main {
+  grid-column: span 9;
+  background-color: var(--card);
+  padding: 20px;
+  width: auto;
+  height: 880px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+@media screen and (max-width: 1225px) {
+  .doctor_panel_main {
+    grid-column: span 10;
+  }
+}
+
+.doctor_panel_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doctor_panel_title h2 {
+  font-size: 18px;
+  color: var(--text-p);
+  margin-bottom: 16px;
+}
+
+.filter_section {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+hr {
+  margin-top: 15px;
+  border: none;
+  height: 1px;
+  background-color: #e2e8f0;
+}

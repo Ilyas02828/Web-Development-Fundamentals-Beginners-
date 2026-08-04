@@ -1,0 +1,95 @@
+@import url(.././index.css);
+
+.card {
+  padding: 40px 20px 20px 20px;
+  width: 277px;
+  background-color: var(--card);
+  height: 180px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.card h1 {
+  font-size: 35px;
+  position: relative;
+  z-index: 1;
+}
+
+.card h1::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0px;
+  height: 50px;
+  width: 50px;
+  background-color: var(--soft-p);
+  z-index: -1;
+  border-radius: 8px;
+}
+
+.card p {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 23px;
+}
+
+.card h2 {
+  margin-top: 10px;
+  color: var(--text-p);
+}
+
+.doctor_card {
+  display: grid;
+  justify-content: space-between;
+  grid-auto-flow: column;
+  border: 1px solid #e2e8f0;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.5s;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.doctor_card :first-child {
+  grid-column: span 2;
+}
+.doctor_card :last-child {
+  grid-column: span 2;
+}
+.doctor_card:first-child span {
+  color: var(--text-completed);
+  font-weight: 600;
+  font-size: 20px;
+  display: inline-block;
+  background-color: var(--soft-p);
+  padding: 10px;
+  border-radius: 10px;
+}
+.doctor_detail {
+  grid-column: span 7;
+}
+.doctor_detail :first-child {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-p);
+}
+
+.doctor_detail :nth-child(2) {
+  font-size: 12px;
+}
+
+.doctor_detail :last-child {
+  color: var(--text-p);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.doctor_card:hover {
+  border: 1px solid #15803d;
+}
+
+.active_card {
+  background-color: var(--soft-p);
+  border-radius: 10px;
+}
