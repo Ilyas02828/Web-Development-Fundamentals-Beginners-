@@ -139,3 +139,16 @@ Goal: Understand the runtime outside the browser. Node.js basics: modules (requi
 Task: Build a simple CLI tool with Node (no Express) that reads a JSON file of "tasks," lets you add/list/delete tasks via command-line arguments, and writes back to the file using fs.
 
 <img width="578" height="767" alt="Screenshot 2026-08-04 120136" src="https://github.com/user-attachments/assets/243aa142-da50-499e-b775-8f9f9bbbe53a" />
+
+## ExpressJS
+## Task # 16:  Express Fundamentals — Routing & Middleware
+Goal: Build a real HTTP server Setting up Express, routes (GET/POST/PUT/DELETE), route params, query params Middleware concept: express.json(), custom logging middleware, next() 
+Task: Build a REST API for the Task Manager (from Day 21) using Express and an in-memory array — full CRUD (GET/tasks, POST/tasks, PUT/tasks/:id, DELETE/tasks/:id). Add a custom logging middleware that prints method + URL + timestamp.
+
+<img width="496" height="747" alt="Screenshot 2026-08-04 160413" src="https://github.com/user-attachments/assets/6d33eb06-5401-4ef5-830a-873e8abe9dd5" />
+
+<img width="495" height="580" alt="Screenshot 2026-08-04 160429" src="https://github.com/user-attachments/assets/50f28eda-fa33-45dc-8473-4e9a12aedec0" />
+
+<img width="637" height="597" alt="Screenshot 2026-08-04 160454" src="https://github.com/user-attachments/assets/d35bda96-1c15-4e6d-82e9-57c22fb7c005" />
+
+<img width="518" height="616" alt="Screenshot 2026-08-04 160514" src="https://github.com/user-attachments/assets/63239fe5-9485-4aae-a722-453941cf8f72" />
