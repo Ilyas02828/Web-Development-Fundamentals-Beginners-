@@ -1,8 +1,21 @@
-const express = require("express");
 const Task = require("../models/task.model");
-const router = express.Router();
 
-router.get("/", async (request, response) => {
+async function createTask(request, response) {
+  try {
+    const task = await Task.create(request.body);
+
+    response.status(201).json({
+      message: "Task created successfully",
+      task,
+    });
+  } catch (error) {
+    response.status(500).json({
+      message: error.message,
+    });
+  }
+}
+
+async function getAllTasks(request, response) {
   try {
     const tasks = await Task.find();
     response.status(200).json(tasks);
@@ -11,9 +24,9 @@ router.get("/", async (request, response) => {
       message: error.message,
     });
   }
-});
+}
 
-router.get("/:id", async (request, response) => {
+async function getTaskById(request, response) {
   try {
     const task = await Task.findById(request.params.id);
 
@@ -29,24 +42,9 @@ router.get("/:id", async (request, response) => {
       message: error.message,
     });
   }
-});
+}
 
-router.post("/", async (request, response) => {
-  try {
-    const task = await Task.create(request.body);
-
-    response.status(201).json({
-      message: "Task created successfully",
-      task,
-    });
-  } catch (error) {
-    response.status(500).json({
-      message: error.message,
-    });
-  }
-});
-
-router.put("/:id", async (request, response) => {
+async function updateTask(request, response) {
   try {
     const updatedTask = await Task.findByIdAndUpdate(
       request.params.id,
@@ -72,9 +70,9 @@ router.put("/:id", async (request, response) => {
       message: error.message,
     });
   }
-});
+}
 
-router.delete("/:id", async (request, response) => {
+async function deleteTask(request, response) {
   try {
     const deletedTask = await Task.findByIdAndDelete(request.params.id);
 
@@ -93,6 +91,12 @@ router.delete("/:id", async (request, response) => {
       message: error.message,
     });
   }
-});
+}
 
-module.exports = router;
+module.exports = {
+  createTask,
+  getAllTasks,
+  getTaskById,
+  updateTask,
+  deleteTask,
+};
