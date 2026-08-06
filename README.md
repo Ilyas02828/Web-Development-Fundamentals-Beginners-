@@ -153,6 +153,7 @@ Task: Build a REST API for the Task Manager (from Day 21) using Express and an i
 
 <img width="518" height="616" alt="Screenshot 2026-08-04 160514" src="https://github.com/user-attachments/assets/63239fe5-9485-4aae-a722-453941cf8f72" />
 
+## MongoDB & Mongoose
 ## Task # 17: MongoDB & Mongoose Basics
 Goal: Real persistence layer. MongoDB Atlas setup (free cluster), Mongoose schemas/models, connecting Express to MongoDB CRUD with Mongoose (.find(), .create(), .findByIdAndUpdate(), .findByIdAndDelete())
 Task: Replace the in-memory array from Day 23 with a real MongoDB collection via Mongoose. Define a Task schema (title, description, completed, createdAt) and wire all CRUD routes to the database.
@@ -166,3 +167,6 @@ Task: Replace the in-memory array from Day 23 with a real MongoDB collection via
 <img width="540" height="678" alt="Screenshot 2026-08-05 130014" src="https://github.com/user-attachments/assets/25e049c0-8ad8-480e-896c-c6533343d599" />
 
 <img width="595" height="616" alt="Screenshot 2026-08-05 130034" src="https://github.com/user-attachments/assets/dee0e823-a6bb-4bef-a0d8-2d10c80f02a3" />
+
+## Create frontend for the Task Manager App using ReactJS.
+<img width="531" height="847" alt="Screenshot 2026-08-06 135013" src="https://github.com/user-attachments/assets/c80853fe-21b6-4d18-a4c5-76c8b6d51799" />
