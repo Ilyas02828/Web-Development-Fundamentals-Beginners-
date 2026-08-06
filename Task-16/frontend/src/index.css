@@ -15,6 +15,16 @@ body {
   padding: 40px 20px;
 }
 
+.task-manager-app-container {
+  width: 100%;
+  max-width: 850px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
 @media (max-width: 265px) {
   .task-manager-header h1 {
     font-size: 20px;

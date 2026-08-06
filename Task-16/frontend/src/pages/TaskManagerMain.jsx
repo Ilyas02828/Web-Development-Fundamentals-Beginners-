@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import API from "../services/task.services";
-import "./TaskManagerMain.css";
 import CreateTask from "../components/CreateTask";
 import DisplayTasks from "../components/DisplayTasks";
+
+import "./TaskManagerMain.css";
 
 function TaskManagerMain() {
   const [title, setTitle] = useState("");
@@ -71,6 +72,11 @@ function TaskManagerMain() {
       console.error(error);
     }
   }
+
+  useEffect(() => {
+    getTasks();
+  }, []);
+
   return (
     <>
       <div className="task-manager-app-container">

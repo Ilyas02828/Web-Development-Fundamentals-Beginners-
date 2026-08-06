@@ -1,3 +1,5 @@
+import "./DisplayTasks.css";
+
 function DisplayTasks(props) {
   return (
     <>

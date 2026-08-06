@@ -1,3 +1,5 @@
+import "./CreateTask.css";
+
 function CreateTask(props) {
   return (
     <>
