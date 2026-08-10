@@ -159,16 +159,28 @@ Goal: Real persistence layer. MongoDB Atlas setup (free cluster), Mongoose schem
 Task: Replace the in-memory array from Day 23 with a real MongoDB collection via Mongoose. Define a Task schema (title, description, completed, createdAt) and wire all CRUD routes to the database.
 
 <img width="670" height="757" alt="Screenshot 2026-08-05 125746" src="https://github.com/user-attachments/assets/1cd044c7-e231-49eb-b7f3-c499bbd22479" />
-
 <img width="542" height="906" alt="Screenshot 2026-08-05 125852" src="https://github.com/user-attachments/assets/e0112737-17bf-4636-a854-27a00fb965f1" />
-
 <img width="517" height="643" alt="Screenshot 2026-08-05 125926" src="https://github.com/user-attachments/assets/37b3563b-32fa-43b5-8ede-441a09560145" />
-
 <img width="540" height="678" alt="Screenshot 2026-08-05 130014" src="https://github.com/user-attachments/assets/25e049c0-8ad8-480e-896c-c6533343d599" />
-
 <img width="595" height="616" alt="Screenshot 2026-08-05 130034" src="https://github.com/user-attachments/assets/dee0e823-a6bb-4bef-a0d8-2d10c80f02a3" />
 
 ## Create frontend for the Task Manager App using ReactJS.
 <img width="413" height="692" alt="Screenshot 2026-08-10 105234" src="https://github.com/user-attachments/assets/20e8c22a-3e23-477e-aa3a-35b7f0994c19" />
 
 <img width="831" height="846" alt="Screenshot 2026-08-10 105338" src="https://github.com/user-attachments/assets/6a71b9a8-6afe-4d05-baed-5b2f742fd3c8" />
+
+## Task # 17:  Authentication — JWT & bcrypt
+Goal: Secure user accounts Password hashing with bcrypt, JWT generation/verification
+POST /register, POST /login, protected routes with auth middleware
+Task: Add a User model and build register/login endpoints (hashed passwords, JWT on login). Protect the Task routes so only logged-in users can access their own tasks (add a userId field to Task, filter by it).
+
+### Updated Task Manager Project
+This task improves the existing Task Manager Project by replacing an open task system with a user-specific and protected task management system. The main technologies used for authentication are:
+bcrypt — for securely hashing user passwords.
+JSON Web Token (JWT) — for authentication after login.
+Express middleware — for protecting task routes.
+MongoDB/Mongoose — for storing users and their tasks.
+Axios interceptors — for automatically sending the JWT from the React frontend to the backend.
+
+<img width="573" height="701" alt="Screenshot 2026-08-10 155201" src="https://github.com/user-attachments/assets/155057a6-e890-4b8d-86e4-5990164883ad" />
+<img width="468" height="568" alt="Screenshot 2026-08-10 155210" src="https://github.com/user-attachments/assets/6864a8c6-4d64-48f5-a90c-12657c03dfa9" />

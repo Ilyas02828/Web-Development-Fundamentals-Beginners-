@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import API from "../services/task.services";
 import CreateTask from "../components/CreateTask";
 import DisplayTasks from "../components/DisplayTasks";
@@ -102,6 +103,9 @@ function TaskManagerMain() {
           cancelUpdate={cancelUpdate}
         />
       </div>
+      <Link to="/logout" className="task-manager-add-button">
+        Logout
+      </Link>
     </>
   );
 }
