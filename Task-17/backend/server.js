@@ -1,19 +1,23 @@
 require("dotenv").config();
 
-const express = require("express");
-const cors = require("cors");
+const app = require("./app");
 const connectDB = require("./config/database");
-const taskRoutes = require("./routes/task.routes");
 
-const app = express();
-connectDB();
+const PORT = process.env.PORT || 4000;
 
-app.use(cors());
-app.use(express.json());
-app.use("/tasks", taskRoutes);
+async function startServer() {
+  try {
+    await connectDB();
 
-app.listen(process.env.PORT, () => {
-  console.log("\n=============================================");
-  console.log(`Server running at http://localhost:${process.env.PORT}`);
-  console.log("=============================================\n");
-});
+    app.listen(PORT, () => {
+      console.log("\n=============================================");
+      console.log(`Server running at http://localhost:${PORT}`);
+      console.log("=============================================\n");
+    });
+  } catch (error) {
+    console.error("Failed to start server:", error);
+    process.exit(1);
+  }
+}
+
+startServer();

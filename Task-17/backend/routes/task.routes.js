@@ -1,19 +1,19 @@
 const express = require("express");
-const Task = require("../models/task.model");
 const router = express.Router();
 
 const {
-  createTask,
-  getAllTasks,
+  getTasks,
   getTaskById,
+  createTask,
   updateTask,
   deleteTask,
 } = require("../controllers/task.controller");
+const authMiddleware = require("../middleware/auth.middleware");
 
-router.get("/", getAllTasks);
-router.get("/:id", getTaskById);
-router.post("/", createTask);
-router.put("/:id", updateTask);
-router.delete("/:id", deleteTask);
+router.get("/", authMiddleware, getTasks);
+router.get("/:id", authMiddleware, getTaskById);
+router.post("/", authMiddleware, createTask);
+router.put("/:id", authMiddleware, updateTask);
+router.delete("/:id", authMiddleware, deleteTask);
 
 module.exports = router;
