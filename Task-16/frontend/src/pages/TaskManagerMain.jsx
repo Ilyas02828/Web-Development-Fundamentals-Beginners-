@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import API from "../services/task.services";
 import CreateTask from "../components/CreateTask";
 import DisplayTasks from "../components/DisplayTasks";
+import UpdateTaskModal from "../components/UpdateTaskModel";
 
 import "./TaskManagerMain.css";
 
@@ -12,14 +13,12 @@ function TaskManagerMain() {
 
   const [tasks, setTasks] = useState([]);
 
-  const [editingTaskId, setEditingTaskId] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+  const [editingTask, setEditingTask] = useState(null);
 
   function editTask(task) {
-    setEditingTaskId(task._id);
-
-    setTitle(task.title);
-    setDescription(task.description);
-    setIsCompleted(task.completed);
+    setEditingTask(task);
+    setShowModal(true);
   }
 
   async function addTask() {
@@ -30,7 +29,7 @@ function TaskManagerMain() {
         completed: isCompleted,
       });
 
-      console.log(response.data);
+      getTasks();
     } catch (error) {
       console.log(error);
     }
@@ -38,6 +37,7 @@ function TaskManagerMain() {
     setTitle("");
     setDescription("");
     setIsCompleted(false);
+    getTasks();
   }
 
   async function getTasks() {
@@ -54,23 +54,21 @@ function TaskManagerMain() {
     getTasks();
   }
 
-  async function updateTask() {
+  async function updateTask(updatedData) {
     try {
-      await API.put(`/${editingTaskId}`, {
-        title,
-        description,
-        completed: isCompleted,
-      });
+      await API.put(`/${editingTask._id}`, updatedData);
 
       getTasks();
-      setEditingTaskId(null);
-
-      setTitle("");
-      setDescription("");
-      setIsCompleted(false);
+      setShowModal(false);
+      setEditingTask(null);
     } catch (error) {
       console.error(error);
     }
+  }
+
+  function cancelUpdate() {
+    setShowModal(false);
+    setEditingTask(null);
   }
 
   useEffect(() => {
@@ -87,9 +85,7 @@ function TaskManagerMain() {
           setDescription={setDescription}
           isCompleted={isCompleted}
           setIsCompleted={setIsCompleted}
-          editingTaskId={editingTaskId}
           addTask={addTask}
-          updateTask={updateTask}
         />
 
         <DisplayTasks
@@ -97,6 +93,13 @@ function TaskManagerMain() {
           tasks={tasks}
           deleteTask={deleteTask}
           editTask={editTask}
+        />
+
+        <UpdateTaskModal
+          showModal={showModal}
+          task={editingTask}
+          updateTask={updateTask}
+          cancelUpdate={cancelUpdate}
         />
       </div>
     </>

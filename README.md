@@ -169,4 +169,6 @@ Task: Replace the in-memory array from Day 23 with a real MongoDB collection via
 <img width="595" height="616" alt="Screenshot 2026-08-05 130034" src="https://github.com/user-attachments/assets/dee0e823-a6bb-4bef-a0d8-2d10c80f02a3" />
 
 ## Create frontend for the Task Manager App using ReactJS.
-<img width="531" height="847" alt="Screenshot 2026-08-06 135013" src="https://github.com/user-attachments/assets/c80853fe-21b6-4d18-a4c5-76c8b6d51799" />
+<img width="413" height="692" alt="Screenshot 2026-08-10 105234" src="https://github.com/user-attachments/assets/20e8c22a-3e23-477e-aa3a-35b7f0994c19" />
+
+<img width="831" height="846" alt="Screenshot 2026-08-10 105338" src="https://github.com/user-attachments/assets/6a71b9a8-6afe-4d05-baed-5b2f742fd3c8" />

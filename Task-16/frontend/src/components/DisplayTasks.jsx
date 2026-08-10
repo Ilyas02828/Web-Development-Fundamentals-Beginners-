@@ -4,10 +4,6 @@ function DisplayTasks(props) {
   return (
     <>
       <section className="task-manager-list-section">
-        <button onClick={props.getTasks} className="task-manager-show-button">
-          Show Tasks
-        </button>
-
         <div className="task-manager-list">
           {props.tasks.map((task) => (
             <div key={task._id} className="task-item">
