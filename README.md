@@ -182,5 +182,15 @@ Express middleware — for protecting task routes.
 MongoDB/Mongoose — for storing users and their tasks.
 Axios interceptors — for automatically sending the JWT from the React frontend to the backend.
 
+## Task # 18: Connecting React Frontend to the Express/MongoDB Backend
+Goal: Full-stack integration. Replacing json-server/mock data in the  React app with real API calls Handling JWT on the frontend (storing token, sending Authorization header, protected routes/UI) CORS setup on the Express side
+Task: Connect the React Task Manager to the real task-api. Add login/register pages in React, store the JWT (localStorage or memory), attach it to API requests, and make the task list user-specific.
+
 <img width="573" height="701" alt="Screenshot 2026-08-10 155201" src="https://github.com/user-attachments/assets/155057a6-e890-4b8d-86e4-5990164883ad" />
 <img width="468" height="568" alt="Screenshot 2026-08-10 155210" src="https://github.com/user-attachments/assets/6864a8c6-4d64-48f5-a90c-12657c03dfa9" />
+
+## Task # 19: TypeScript Fundamentals
+Goal: Type safety mindset. Basic types, interfaces vs types, enum, generics basics, tsconfig.json Typing function params/returns, union types, optional/nullable
+Task: Convert the Day 22 Node CLI tool to TypeScript. Define an interface for Task, type all functions, and fix all type errors (no any).
+
+<img width="535" height="598" alt="Screenshot 2026-08-11 135338" src="https://github.com/user-attachments/assets/11b9c592-c4cc-4312-acc2-3464161c3de0" />
