@@ -194,3 +194,7 @@ Goal: Type safety mindset. Basic types, interfaces vs types, enum, generics basi
 Task: Convert the Day 22 Node CLI tool to TypeScript. Define an interface for Task, type all functions, and fix all type errors (no any).
 
 <img width="535" height="598" alt="Screenshot 2026-08-11 135338" src="https://github.com/user-attachments/assets/11b9c592-c4cc-4312-acc2-3464161c3de0" />
+
+## Task # 20: TypeScript + Express Backend
+Goal: Type-safe API layer. Typing Express Request/Response, typing Mongoose schemas/models with Document/interfaces Typed middleware, typed error handling
+Task: Migrate the Day 26 task-api to TypeScript — typed Task/User interfaces, typed route handlers, typed JWT payload. Set up ts-node-dev for local dev.
