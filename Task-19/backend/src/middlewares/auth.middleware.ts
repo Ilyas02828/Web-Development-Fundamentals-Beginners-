@@ -1,32 +1,32 @@
-import { Request, Response, NextFunction } from "express";
+import type { RequestHandler } from "express";
 import jwt from "jsonwebtoken";
-import { JwtPayload } from "../types/auth.types";
 
-export function authMiddleware(
-  request: Request,
-  response: Response,
-  next: NextFunction,
-): void {
-  const authHeader = request.headers.authorization;
-  if (!authHeader) {
-    response.status(401).json({ message: "Authorization header missing" });
-    return;
+export const authMiddleware: RequestHandler<any> = (req, res, next) => {
+  try {
+    const authHeader = req.headers.authorization;
+
+    if (!authHeader || !authHeader.startsWith("Bearer ")) {
+      res.status(401).json({ success: false, message: "Unauthorized" });
+      return;
+    }
+
+    const token = authHeader.split(" ")[1];
+
+    if (!token) {
+      res.status(401).json({ success: false, message: "Unauthorized" });
+      return;
+    }
+
+    const decoded = jwt.verify(token, process.env.JWT_SECRET as string) as {
+      userId: string;
+    };
+
+    req.user = { userId: decoded.userId };
+
+    next();
+  } catch (error) {
+    res
+      .status(401)
+      .json({ success: false, message: "Invalid or expired token" });
   }
-
-  const token = authHeader.split(" ")[1];
-  if (!token) {
-    response.status(401).json({ message: "Token missing" });
-    return;
-  }
-
-  const secret = process.env.JWT_SECRET;
-  if (!secret) {
-    response.status(500).json({ message: "JWT_SECRET is not defined" });
-    return;
-  }
-
-  const decoded = jwt.verify(token, secret) as JwtPayload;
-  request.user = decoded;
-
-  next();
-}
+};

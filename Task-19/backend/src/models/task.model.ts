@@ -1,21 +1,31 @@
-import mongoose from "mongoose";
-import { ITask } from "../types/task.types";
+import mongoose, { Schema, type Document } from "mongoose";
+export interface ITask extends Document {
+  title: string;
+  description: string;
+  completed: boolean;
 
-const taskSchema = new mongoose.Schema<ITask>(
+  userId: mongoose.Types.ObjectId;
+  createdAt: Date;
+}
+
+const taskSchema = new Schema<ITask>(
   {
     title: {
       type: String,
       required: true,
-      trim: true,
     },
     description: {
       type: String,
       required: true,
-      trim: true,
     },
     completed: {
       type: Boolean,
       default: false,
+    },
+    userId: {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+      required: true,
     },
   },
   {

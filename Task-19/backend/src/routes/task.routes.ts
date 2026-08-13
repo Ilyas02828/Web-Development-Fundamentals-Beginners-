@@ -6,13 +6,15 @@ import {
   updateTask,
   deleteTask,
 } from "../controllers/task.controller";
+import { authMiddleware } from "../middlewares/auth.middleware";
+import type { TaskParams, UpdateTaskBody } from "../types/task.types";
 
 const router = express.Router();
 
-router.get("/", getTasks);
-router.get("/:id", getTask);
-router.post("/", createTask);
-router.put("/:id", updateTask);
-router.delete("/:id", deleteTask);
+router.get("/", authMiddleware, getTasks);
+router.get("/:id", authMiddleware, getTask);
+router.post("/", authMiddleware, createTask);
+router.put("/:id", authMiddleware, updateTask);
+router.delete("/:id", authMiddleware, deleteTask);
 
 export default router;
