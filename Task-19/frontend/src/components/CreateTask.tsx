@@ -58,9 +58,7 @@ function CreateTask({
           className="status"
         >
           <option value="">Select task status</option>
-
           <option value="true">Completed</option>
-
           <option value="false">Pending</option>
         </select>
 

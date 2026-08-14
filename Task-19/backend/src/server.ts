@@ -10,7 +10,9 @@ async function startServer(): Promise<void> {
 
   app.listen(PORT, () => {
     console.log(`Server running on port http://localhost:${PORT}`);
+    console.log("===============================================\n");
   });
 }
 
+console.log("\n===============================================");
 startServer();

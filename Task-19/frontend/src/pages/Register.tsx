@@ -34,7 +34,6 @@ function Register() {
 
     try {
       setLoading(true);
-
       await API.post("/register", {
         name,
         email,
@@ -54,6 +53,7 @@ function Register() {
       setLoading(false);
     }
   }
+
   return (
     <div className="auth-page">
       <div className="auth-card">

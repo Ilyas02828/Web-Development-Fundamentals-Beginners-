@@ -48,7 +48,6 @@ function TaskManagerMain() {
   async function getTasks(): Promise<void> {
     try {
       const response = await API.get<Task[]>("/");
-      console.log(response.data);
       setTasks(response.data.tasks);
     } catch (error) {
       console.error("Get Tasks Error:", error);

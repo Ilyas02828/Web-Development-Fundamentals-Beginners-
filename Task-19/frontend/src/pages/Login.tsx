@@ -56,13 +56,11 @@ function Login() {
     <div className="auth-page">
       <div className="auth-card">
         <h1>Task Manager App</h1>
-
         <p className="auth-subtitle">Login to manage your tasks</p>
 
         <form className="auth-form" onSubmit={handleLogin}>
           <div className="auth-form-group">
             <label htmlFor="email">Email</label>
-
             <input
               id="email"
               type="email"
@@ -74,7 +72,6 @@ function Login() {
 
           <div className="auth-form-group">
             <label htmlFor="password">Password</label>
-
             <input
               id="password"
               type="password"
