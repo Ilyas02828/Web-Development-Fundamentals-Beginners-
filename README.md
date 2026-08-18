@@ -198,3 +198,8 @@ Task: Convert the Day 22 Node CLI tool to TypeScript. Define an interface for Ta
 ## Task # 20: TypeScript + Express Backend
 Goal: Type-safe API layer. Typing Express Request/Response, typing Mongoose schemas/models with Document/interfaces Typed middleware, typed error handling
 Task: Migrate the Day 26 task-api to TypeScript — typed Task/User interfaces, typed route handlers, typed JWT payload. Set up ts-node-dev for local dev.
+
+## Task # 21: Admin Panel Architecture & Role-Based Access Control (RBAC)
+Goal: Design multi-role systems. User roles (admin, editor, user) in the Mongoose schema, role-based middleware (isAdmin, isEditor)
+Planning an admin panel's structure: separate routes/layout vs shared app with conditional UI
+Task: Add a role field to the User schema. Build Express middleware that restricts certain routes to admin only (e.g. DELETE /users/:id, GET /admin/stats). Seed a test admin user.
