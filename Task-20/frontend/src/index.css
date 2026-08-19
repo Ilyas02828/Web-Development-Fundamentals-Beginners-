@@ -122,3 +122,74 @@ body {
     gap: 15px;
   }
 }
+
+@media (max-width: 900px) {
+  .admin-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+  }
+
+  .admin-sidebar.sidebar-open {
+    transform: translateX(0);
+  }
+
+  .sidebar-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 900;
+  }
+
+  .admin-main {
+    margin-left: 0;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .admin-topbar {
+    padding: 0 18px;
+  }
+
+  .topbar-title {
+    margin-left: 15px;
+    margin-right: auto;
+  }
+
+  .admin-content {
+    padding: 20px;
+  }
+
+  .dashboard-welcome {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .admin-overview-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .admin-content {
+    padding: 15px;
+  }
+
+  .topbar-title h1 {
+    font-size: 18px;
+  }
+
+  .topbar-title p {
+    display: none;
+  }
+}

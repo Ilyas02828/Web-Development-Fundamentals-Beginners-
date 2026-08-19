@@ -1,12 +1,22 @@
 import { Navigate } from "react-router-dom";
 
 function AdminRoute({ children }) {
-  const user = JSON.parse(localStorage.getItem("user"));
-  if (!user) {
+  const token = localStorage.getItem("token");
+  const storedUser = localStorage.getItem("user");
+
+  let user = null;
+  try {
+    user = storedUser ? JSON.parse(storedUser) : null;
+  } catch (error) {
+    console.error("Invalid user data:", error);
+    localStorage.removeItem("user");
+  }
+
+  if (!user || !token) {
     return <Navigate to="/login" replace />;
   }
 
-  if (user.role !== "admin") {
+  if (user.role?.toLowerCase() !== "admin") {
     return <Navigate to="/tasks" replace />;
   }
 

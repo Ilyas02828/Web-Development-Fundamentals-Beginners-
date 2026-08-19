@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Logout from "./pages/Logout";
 
 import TaskManagerMain from "./pages/TaskManagerMain";
+import AdminDashboard from "./pages/AdminDashboard";
 import AdminPanel from "./pages/AdminPanel";
 
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -31,10 +32,12 @@ function App() {
           path="/admin"
           element={
             <AdminRoute>
-              <AdminPanel />
+              <AdminDashboard />
             </AdminRoute>
           }
-        />
+        >
+          <Route path="tasks" element={<AdminPanel />} />
+        </Route>
 
         <Route path="*" element={<Login />} />
       </Routes>

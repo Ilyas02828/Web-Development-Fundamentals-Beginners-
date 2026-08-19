@@ -207,4 +207,5 @@ Task: Add a role field to the User schema. Build Express middleware that restric
 ## Task # 22: Admin Dashboard UI — Layout & Protected Routes
 Goal: Build the admin shell. Admin layout (sidebar + topbar), nested routing (/admin/*) with React RouterRoute guards: redirect non-admins away from /admin routes
 Task: Build an AdminLayout component (sidebar nav: Dashboard, Users, Tasks, Settings) with nested routes. Add a ProtectedRoute/AdminRoute wrapper that checks the logged-in user's role from Redux/Context before rendering.
-<img width="930" height="874" alt="Screenshot 2026-08-19 115443" src="https://github.com/user-attachments/assets/32ae8d55-88bb-443d-b1f0-f4dea4b37a3e" />
+
+<img width="1549" height="905" alt="Screenshot 2026-08-19 160038" src="https://github.com/user-attachments/assets/a417f5cc-8ae0-48ac-84f6-3cb8af838285" />

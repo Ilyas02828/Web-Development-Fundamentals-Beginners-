@@ -7,7 +7,7 @@
 
 .admin-container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -29,12 +29,6 @@
   margin: 7px 0 0;
   color: #6b7280;
   font-size: 15px;
-}
-
-.admin-button-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
 }
 
 .refresh-btn {

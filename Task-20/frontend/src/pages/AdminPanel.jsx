@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 import "./AdminPanel.css";
-import { Link } from "react-router-dom";
 
 function AdminPanel() {
   const [tasks, setTasks] = useState([]);
@@ -54,14 +53,9 @@ function AdminPanel() {
               <p>View and monitor all users' tasks</p>
             </div>
 
-            <div className="admin-button-container">
-              <Link to="/logout" className="refresh-btn">
-                Logout
-              </Link>
-              <button className="refresh-btn" onClick={fetchAllTasks}>
-                Refresh
-              </button>
-            </div>
+            <button className="refresh-btn" onClick={fetchAllTasks}>
+              Refresh
+            </button>
           </div>
 
           {error && <div className="error-message">{error}</div>}
