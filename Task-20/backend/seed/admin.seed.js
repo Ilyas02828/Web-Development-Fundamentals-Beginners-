@@ -9,8 +9,9 @@ async function seedAdmin() {
     await mongoose.connect(process.env.MONGODB_URI);
     console.log("MongoDB connected");
 
-    const adminEmail = "admin@example.com";
-    const adminPassword = "admin123";
+    //Enter the eamil and password of Admin if you want to add new Admin
+    // const adminEmail =
+    // const adminPassword =
 
     const existingAdmin = await User.findOne({ email: adminEmail });
     if (existingAdmin) {
