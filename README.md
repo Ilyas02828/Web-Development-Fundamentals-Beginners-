@@ -203,3 +203,8 @@ Task: Migrate the Day 26 task-api to TypeScript — typed Task/User interfaces, 
 Goal: Design multi-role systems. User roles (admin, editor, user) in the Mongoose schema, role-based middleware (isAdmin, isEditor)
 Planning an admin panel's structure: separate routes/layout vs shared app with conditional UI
 Task: Add a role field to the User schema. Build Express middleware that restricts certain routes to admin only (e.g. DELETE /users/:id, GET /admin/stats). Seed a test admin user.
+
+## Task # 22: Admin Dashboard UI — Layout & Protected Routes
+Goal: Build the admin shell. Admin layout (sidebar + topbar), nested routing (/admin/*) with React RouterRoute guards: redirect non-admins away from /admin routes
+Task: Build an AdminLayout component (sidebar nav: Dashboard, Users, Tasks, Settings) with nested routes. Add a ProtectedRoute/AdminRoute wrapper that checks the logged-in user's role from Redux/Context before rendering.
+![alt text](<Screenshot 2026-08-19 115443.png>)
