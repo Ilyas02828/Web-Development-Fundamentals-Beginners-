@@ -16,7 +16,7 @@ function AdminPanel() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        `${import.meta.env.VITE_API_URL}/tasks/admin/all`,
+        `${import.meta.env.VITE_API_URL}/admin/all`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

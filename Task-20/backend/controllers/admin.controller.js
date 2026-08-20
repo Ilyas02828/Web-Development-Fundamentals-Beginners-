@@ -25,3 +25,21 @@ async function getAdminStats(request, response) {
 }
 
 module.exports = getAdminStats;
+
+async function getAllTasks(request, response) {
+  try {
+    const { userId } = request.query;
+    const filter = userId ? { userId } : {};
+
+    const tasks = await Task.find(filter)
+      .populate("userId", "name email role")
+      .sort({ createdAt: -1 });
+
+    return response.status(200).json(tasks);
+  } catch (error) {
+    console.error("Get All Tasks Error:", error);
+    return response.status(500).json({ message: "Failed to get all tasks" });
+  }
+}
+
+module.exports = getAllTasks;

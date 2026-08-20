@@ -13,22 +13,6 @@ async function getTasks(request, response) {
   }
 }
 
-async function getAllTasks(request, response) {
-  try {
-    const { userId } = request.query;
-    const filter = userId ? { userId } : {};
-
-    const tasks = await Task.find(filter)
-      .populate("userId", "name email role")
-      .sort({ createdAt: -1 });
-
-    return response.status(200).json(tasks);
-  } catch (error) {
-    console.error("Get All Tasks Error:", error);
-    return response.status(500).json({ message: "Failed to get all tasks" });
-  }
-}
-
 async function getTaskById(request, response) {
   try {
     const task = await Task.findOne({
@@ -131,7 +115,6 @@ async function deleteTask(request, response) {
 
 module.exports = {
   getTasks,
-  getAllTasks, // NEW
   getTaskById,
   createTask,
   updateTask,
