@@ -10,8 +10,8 @@ async function seedAdmin() {
     console.log("MongoDB connected");
 
     //Enter the eamil and password of Admin if you want to add new Admin
-    // const adminEmail =
-    // const adminPassword =
+    const adminEmail = null;
+    const adminPassword = null;
 
     const existingAdmin = await User.findOne({ email: adminEmail });
     if (existingAdmin) {
